@@ -1,16 +1,42 @@
-# React + Vite
+Frontend Setup
+Installed necessary dependencies: Tailwind CSS, React Router DOM, React Icons, Redux Toolkit (RTK).
+Set up React Router with an initial Login page for testing.
+Created a static layout for the Login page with a functional form.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Login Functionality
+Integrated Redux Toolkit for state management.
+Initially mocked form submission with setTimeout for testing.
+Replaced the mock with real API calls using createAsyncThunk.
 
-Currently, two official plugins are available:
+Backend Setup
+Installed required packages for backend development.
+Created basic router and controller structure for user login.
+Implemented login functionality and tested it using Postman.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend Integration with Backend
+Connected frontend login form to backend using Redux Thunks.
+Implemented JWT authentication with cookies. Token handling is working correctly.
 
-## React Compiler
+Teacher Dashboard
+Developed static Teacher and Student dashboards with sample data.
+Created backend endpoints for teacher-related data.
+Implemented Redux async thunks for fetching and managing teacher data on the frontend.
+Added functionality to create, read, update, and delete assignments.
+Implemented logout functionality.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Student Assignment Module
+Backend routes and controllers implemented for fetching and submitting assignments.
+Frontend integrated to display assignments for students using async thunks.
+Implemented submission restrictions based on due dates.
+Students can submit assignments only once, and submissions after the due date are restricted.
 
-## Expanding the ESLint configuration
+Teacher Assignment Review
+Created a Teacher Assignment Details page to view student submissions.
+Teachers can see student names, answers, and submission dates.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Final Touches
+Restructured the logout flow.
+Reviewed overall functionality; major features are complete and tested.
+Restructured the logout flow.
+
+Reviewed overall functionality; major features are complete and tested.
