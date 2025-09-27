@@ -32,7 +32,7 @@ export const getAssignmentForTeacher = createAsyncThunk(
     const response = await axios.get(
       `http://localhost:5000/api/assignment/${assignmentId}/submissions`
     );
-    return response.data; // assuming {success:true, data:[...]}
+    return response.data;
   }
 );
 

@@ -9,31 +9,6 @@ import { useState } from "react";
 import StudentModal from "./StudentModal";
 
 export default function StudentLayout() {
-  // Example: this would come from logged-in user / API
-  // const student = {
-  //   name: "Sean Abot",
-  //   assignments: [
-  //     {
-  //       title: "React Basics",
-  //       description: "Introduction to React components and props",
-  //       dueDate: "2025-10-01",
-  //       status: "Draft",
-  //     },
-  //     {
-  //       title: "API Integration",
-  //       description: "Fetch and display data from REST API",
-  //       dueDate: "2025-10-05",
-  //       status: "Submitted",
-  //     },
-  //     {
-  //       title: "Node.js Project",
-  //       description: "Build a simple backend service",
-  //       dueDate: "2025-10-10",
-  //       status: "In Review",
-  //     },
-  //   ],
-  // };
-
   const dispatch = useDispatch();
   const { assignmentList } = useSelector((store) => store.assignment);
   const { user } = useSelector((store) => store.auth);
@@ -93,8 +68,6 @@ export default function StudentLayout() {
                   assignment.status === "Completed" ||
                   studentHasSubmitted ||
                   dueDatePassed;
-
-                // Determine UI label
 
                 let statusLabel = "";
                 if (studentHasSubmitted) {

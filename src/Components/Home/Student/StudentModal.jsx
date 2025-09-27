@@ -44,7 +44,6 @@ export default function StudentModal({ formData, setAssignmentUpdate }) {
       <div className="bg-white rounded-lg shadow-lg p-6 w-[400px]">
         <h2 className="text-xl font-semibold mb-4">Submit Assignment</h2>
 
-        {/* Assignment Details (read-only) */}
         <div className="mb-4">
           <p className="font-medium">{formData.title}</p>
           <p className="text-sm text-gray-600">{formData.description}</p>
